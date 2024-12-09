@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Pyqs-Uploader</title>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!----------------------STEP 1--------------------->
+    <section id="step1"
+        class="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <a href="#"
+                class="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-base text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
+                <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3">New</span> <span
+                    class="text-base font-medium">Jumbotron component was launched! See what's new</span>
+                <svg class="w-2.5 h-2.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+            </a>
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                Step 1: Just fill out the basic details</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">Here
+                provide your name with the details of branch & SEM of PYQS you are wanted to upload.</p>
+            <section class="bg-gray-50 dark:bg-gray-900" style="border-radius: 45px;">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl">
+                    <ol class="flex items-center w-full mb-4 sm:mb-5" style="
+                    border-right-width: 0px;
+                    padding-right: 35px;
+                    padding-left: 35px;
+                    margin-bottom: 30px;
+                ">
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block dark:after:border-gray-700">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM6.5 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3.014 13.021l.157-.625A3.427 3.427 0 0 1 6.5 9.571a3.426 3.426 0 0 1 3.322 2.805l.159.622-6.967.023ZM16 12h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block dark:after:border-gray-700">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 12V6h16v6H2Z" />
+                                    <path
+                                        d="M6 8H4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm8 0H9a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0">
+                                <svg class="w-8 h-8 text-blue-600 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 17h3a3 3 0 0 0 0-6h-.025a5.56 5.56 0 0 0 .025-.5A5.5 5.5 0 0 0 7.207 9.021C7.137 9.017 7.071 9 7 9a4 4 0 1 0 0 8h2.167M12 19v-9m0 0-2 2m2-2 2 2" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ol>
+                    <div>
+                        <form id="step1Form" action="#">
+                            <h3 class="mb-4 text-lg font-medium leading-none text-gray-900 dark:text-white">Basic
+                                details</h3>
+                            <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                                <div class="mb-4">
+                                    <label for="Name"
+                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Your
+                                        Name</label>
+                                    <input type="text" name="Name" id="name"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="Branch"
+                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">PYQS
+                                        Branch</label>
+                                    <select id="branch" name="Branch" required
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sdefaultm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option disabled selected>Select Which Branch Of Pyqs Uploading</option>
+                                        <option value="COMPS">COMPS</option>
+                                        <option value="AI&DS">AI&DS</option>
+                                        <option value="E&TC">E&TC</option>
+                                        <option value="IT">IT</option>
+                                        <option value="MECH">MECH</option>
+                                        <option value="CIVIL">CIVIL</option>
+                                        <option value="E&CS">E&CS</option>
+                                        <option value="MME">MME</option>
+                                        <option value="CSE">CSE</option>
+                                        <option value="AI&ML">AI&ML</option>
+                                        <option value="IoT">IoT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-5 flex justify-center">
+                                <div class="w-full max-w-sm">
+                                    <label for="SEM"
+                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">PYQS
+                                        SEM</label>
+                                    <select id="SEM" name="Sem"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option disabled selected>Select Which SEM PYQS Uploading</option>
+                                        <option value="SEM 3">SEM 3 (ODD)</option>
+                                        <option value="SEM 4">SEM 4 (EVEN)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button id="step1Submit" name="submit" type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-base px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <span class="inline-block">Next</span>
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white inline-block" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div
+            class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
+        </div>
+    </section>
+
+    <!-------------------------STEP 2------------------------>
+    <section id="step2"
+        class="hidden bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                Step 2: Select the paper you are Uploading</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">Here 2nd
+                year is bydefault, You have select which examination PYQS PDF file you are uploading either ESE, ISE1,
+                ISE2 and combined(not recommeded only when its difficult to sort between ESE,ISE1 & ISE2 in PDF file).
+                You can select max 3 options at a time</p>
+            <section class="bg-gray-50 dark:bg-gray-900" style="border-radius: 45px;">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl">
+                    <ol class="flex items-center w-full mb-4 sm:mb-5" style="
+                    border-right-width: 0px;
+                    padding-right: 35px;
+                    padding-left: 35px;
+                    margin-bottom: 30px;
+                ">
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block dark:after:border-blue-800">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM6.5 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3.014 13.021l.157-.625A3.427 3.427 0 0 1 6.5 9.571a3.426 3.426 0 0 1 3.322 2.805l.159.622-6.967.023ZM16 12h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block dark:after:border-gray-700">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 12V6h16v6H2Z" />
+                                    <path
+                                        d="M6 8H4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm8 0H9a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0">
+                                <svg class="w-8 h-8 text-blue-600 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 17h3a3 3 0 0 0 0-6h-.025a5.56 5.56 0 0 0 .025-.5A5.5 5.5 0 0 0 7.207 9.021C7.137 9.017 7.071 9 7 9a4 4 0 1 0 0 8h2.167M12 19v-9m0 0-2 2m2-2 2 2" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ol>
+                    <div>
+                        <form action="#">
+                            <h3 class="mb-4 text-lg font-medium leading-none text-gray-900 dark:text-white">File
+                                Uploading Details</h3>
+
+                            <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                                <div class="mb-4">
+                                    <label for="Branch"
+                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Year</label>
+                                    <select id="countries" name="Branch"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sdefaultm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option value="II" selected>II</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h3 class="mb-2 font-semibold text-gray-900 dark:text-white">Select File You Are
+                                        Uploading (Max 3)</h3>
+                                    <ul
+                                        class="items-center w-full text-base font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="ESE" type="checkbox" value=""
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="vue-checkbox-list"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-900 dark:text-gray-300">ESE</label>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="ISE1" type="checkbox" value=""
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="react-checkbox-list"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-900 dark:text-gray-300">ISE
+                                                    1</label>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="ISE2" type="checkbox" value=""
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="angular-checkbox-list"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-900 dark:text-gray-300">ISE
+                                                    2</label>
+                                            </div>
+                                        </li>
+                                        <li class="w-full dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="COMBINED" type="checkbox" value=""
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="laravel-checkbox-list"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-900 dark:text-gray-300">Combined</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <button id="backToStep1" name="submit" type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-base px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white inline-block" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4" />
+                                </svg>
+                                <span class="inline-block">Step 1</span>
+                            </button>
+                            <button id="step2Submit" type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-base px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <span class="inline-block">Next</span>
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white inline-block" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div
+            class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
+        </div>
+    </section>
+
+    <!------------------------STEP 3------------------------->
+    <section id="step3"
+        class="hidden bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                Step 3: Upload The Files</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">Here
+                upload the files you are selected from max 3 options above. You will be directed to upload files one by
+                one on the basis of options you have selected from max 3 above.</p>
+            <section class="bg-gray-50 dark:bg-gray-900" style="border-radius: 45px;">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl">
+                    <ol class="flex items-center w-full mb-4 sm:mb-5" style="
+                    border-right-width: 0px;
+                    padding-right: 35px;
+                    padding-left: 35px;
+                    margin-bottom: 30px;
+                ">
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block dark:after:border-blue-800">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM6.5 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3.014 13.021l.157-.625A3.427 3.427 0 0 1 6.5 9.571a3.426 3.426 0 0 1 3.322 2.805l.159.622-6.967.023ZM16 12h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block dark:after:border-blue-800">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 12V6h16v6H2Z" />
+                                    <path
+                                        d="M6 8H4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm8 0H9a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-blue-600 dark:text-blue-500">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0">
+                                <svg class="w-8 h-8 text-blue-600 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 17h3a3 3 0 0 0 0-6h-.025a5.56 5.56 0 0 0 .025-.5A5.5 5.5 0 0 0 7.207 9.021C7.137 9.017 7.071 9 7 9a4 4 0 1 0 0 8h2.167M12 19v-9m0 0-2 2m2-2 2 2" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ol>
+                    <div>
+                        <form id="step3Form" action="#">
+                            <h3 id="eseFileUpload"
+                                class="mb-4 text-lg font-medium leading-none text-gray-900 dark:text-white">Upload The
+                                ESE File</h3>
+                            <h3 id="ise1FileUpload"
+                                class="mb-4 text-lg font-medium leading-none text-gray-900 dark:text-white">Upload The
+                                ISE 1 File</h3>
+                            <h3 id="ise2FileUpload"
+                                class="mb-4 text-lg font-medium leading-none text-gray-900 dark:text-white">Upload The
+                                ISE 2 File</h3>
+                            <h3 id="combinedFileUpload"
+                                class="mb-4 text-lg font-medium leading-none text-gray-900 dark:text-white">Upload The
+                                Combined File</h3>
+                            <div class="mb-4 flex items-center justify-center">
+                                <div class="flex items-center justify-center w-full" style="max-width: 80%;">
+                                    <label id="dropzone" style="border-radius: 45px;"
+                                        class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                                        <input id="dropzone-file" type="file" name="File_link" class="hidden"
+                                            onchange="handleFileInput(this.files)" accept=".pdf" />
+
+                                        <!-- Initial file container -->
+                                        <div id="file-container"
+                                            class="flex flex-col items-center justify-center pt-5 pb-6">
+                                            <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 20 16">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                            </svg>
+                                            <p class="mb-2 text-base text-gray-500 dark:text-gray-400">
+                                                <span class="font-semibold">Click to upload</span> or drag and drop
+                                            </p>
+                                            <p class="text-xs text-gray-500 dark:text-gray-400">PDF Only</p>
+                                        </div>
+
+                                        <!-- File icon and name display -->
+                                        <div id="file-icon" class="hidden">
+                                            <div class="mb-4">
+                                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                                    <svg height="100px" width="100px" version="1.1" id="_x32_"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                                        xml:space="preserve" fill="#000000">
+                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                            stroke-linejoin="round"></g>
+                                                        <g id="SVGRepo_iconCarrier">
+                                                            <style type="text/css">
+                                                                .st0 {
+                                                                    fill: #ffffff;
+                                                                }
+                                                            </style>
+                                                            <g>
+                                                                <path class="st0"
+                                                                    d="M347.746,346.204c-8.398-0.505-28.589,0.691-48.81,4.533c-11.697-11.839-21.826-26.753-29.34-39.053 c24.078-69.232,8.829-88.91-11.697-88.91c-16.119,0-24.167,17.011-22.376,35.805c0.906,9.461,8.918,29.34,18.78,48.223 c-6.05,15.912-16.847,42.806-27.564,62.269c-12.545,3.812-23.305,8.048-31.027,11.622c-38.465,17.888-41.556,41.773-33.552,51.894 c15.197,19.226,47.576,2.638,80.066-55.468c22.243-6.325,51.508-14.752,54.146-14.752c0.304,0,0.721,0.097,1.204,0.253 c16.215,14.298,35.366,30.67,51.128,32.825c22.808,3.136,35.791-13.406,34.891-23.692 C382.703,361.461,376.691,347.942,347.746,346.204z M203.761,408.88c-9.401,11.178-24.606,21.9-29.972,18.334 c-5.373-3.574-6.265-13.86,5.819-25.497c12.076-11.623,32.29-17.657,35.329-18.787c3.59-1.337,4.482,0,4.482,1.791 C219.419,386.512,213.154,397.689,203.761,408.88z M244.923,258.571c-0.899-11.192,1.33-21.922,10.731-23.26 c9.386-1.352,13.868,9.386,10.292,26.828c-3.582,17.464-5.38,29.08-7.164,30.44c-1.79,1.338-3.567-3.144-3.567-3.144 C251.627,282.27,245.815,269.748,244.923,258.571z M248.505,363.697c4.912-8.064,17.442-40.702,17.442-40.702 c2.683,4.926,23.699,29.956,23.699,29.956S257.438,360.123,248.505,363.697z M345.999,377.995 c-13.414-1.768-36.221-17.895-36.221-17.895c-3.128-1.337,24.992-5.157,35.79-4.466c13.875,0.9,18.794,6.718,18.794,12.53 C364.362,373.982,359.443,379.787,345.999,377.995z">
+                                                                </path>
+                                                                <path class="st0"
+                                                                    d="M461.336,107.66l-98.34-98.348L353.683,0H340.5H139.946C92.593,0,54.069,38.532,54.069,85.901v6.57H41.353 v102.733h12.716v230.904c0,47.361,38.525,85.893,85.878,85.893h244.808c47.368,0,85.893-38.532,85.893-85.893V130.155v-13.176 L461.336,107.66z M384.754,480.193H139.946c-29.875,0-54.086-24.212-54.086-54.086V195.203h157.31V92.47H85.86v-6.57 c0-29.882,24.211-54.102,54.086-54.102H332.89v60.894c0,24.888,20.191,45.065,45.079,45.065h60.886v288.349 C438.855,455.982,414.636,480.193,384.754,480.193z M88.09,166.086v-47.554c0-0.839,0.683-1.524,1.524-1.524h15.108 c2.49,0,4.786,0.409,6.837,1.212c2.029,0.795,3.812,1.91,5.299,3.322c1.501,1.419,2.653,3.144,3.433,5.121 c0.78,1.939,1.182,4.058,1.182,6.294c0,2.282-0.402,4.414-1.19,6.332c-0.78,1.918-1.932,3.619-3.418,5.054 c-1.479,1.427-3.27,2.549-5.321,3.329c-2.036,0.78-4.332,1.174-6.822,1.174h-6.376v17.241c0,0.84-0.683,1.523-1.523,1.523h-7.208 C88.773,167.61,88.09,166.926,88.09,166.086z M134.685,166.086v-47.554c0-0.839,0.684-1.524,1.524-1.524h16.698 c3.173,0,5.968,0.528,8.324,1.568c2.386,1.062,4.518,2.75,6.347,5.009c0.944,1.189,1.694,2.504,2.236,3.916 c0.528,1.375,0.929,2.862,1.189,4.407c0.253,1.531,0.401,3.181,0.453,4.957c0.045,1.694,0.067,3.515,0.067,5.447 c0,1.924-0.022,3.746-0.067,5.44c-0.052,1.769-0.2,3.426-0.453,4.964c-0.26,1.546-0.661,3.025-1.189,4.399 c-0.55,1.427-1.3,2.743-2.23,3.909c-1.842,2.282-3.976,3.969-6.354,5.016c-2.334,1.04-5.135,1.568-8.324,1.568h-16.698 C135.368,167.61,134.685,166.926,134.685,166.086z M214.269,137.981c0.84,0,1.523,0.684,1.523,1.524v6.48 c0,0.84-0.683,1.524-1.523,1.524h-18.244v18.579c0,0.84-0.684,1.523-1.524,1.523h-7.209c-0.84,0-1.523-0.683-1.523-1.523v-47.554 c0-0.839,0.683-1.524,1.523-1.524h27.653c0.839,0,1.524,0.684,1.524,1.524v6.48c0,0.84-0.684,1.524-1.524,1.524h-18.92v11.444 H214.269z">
+                                                                </path>
+                                                                <path class="st0"
+                                                                    d="M109.418,137.706c1.212-1.092,1.798-2.645,1.798-4.749c0-2.096-0.587-3.649-1.798-4.741 c-1.263-1.13-2.928-1.68-5.098-1.68h-5.975v12.848h5.975C106.489,139.385,108.155,138.836,109.418,137.706z">
+                                                                </path>
+                                                                <path class="st0"
+                                                                    d="M156.139,157.481c1.13-0.424,2.103-1.107,2.973-2.088c0.944-1.055,1.538-2.571,1.769-4.511 c0.26-2.208,0.386-5.091,0.386-8.569c0-3.485-0.126-6.369-0.386-8.569c-0.231-1.946-0.825-3.462-1.762-4.51 c-0.869-0.982-1.873-1.679-2.972-2.089c-1.182-0.453-2.534-0.676-4.042-0.676h-7.164v31.68h7.164 C153.605,158.15,154.965,157.927,156.139,157.481z">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p id="file-name-display" style="margin-bottom: 20px"
+                                                    class="text-gray-500 dark:text-gray-400"></p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <button id="backToStep2" type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-base px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white inline-block" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4" />
+                                </svg>
+                                <span class="inline-block">Step 2</span>
+                            </button>
+                            <button id="finalSubmit" type="finalSubmit"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-base px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                upload
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div
+            class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
+        </div>
+    </section>
+
+
+    <footer id="footer" class="bg-white dark:bg-gray-900 text-center">
+        <div class="mx-auto w-full max-w-screen-xl">
+            <div class="py-4">
+                <div>
+                    <h2 class="mb-2 text-base font-semibold text-gray-900 uppercase dark:text-white">Reported An Bug ?
+                    </h2>
+                    <span class="text-md text-gray-400 md:text-center">Share A Detailed Information Of An Issue <a
+                            href="mailto:shaikh_inayat@outlook.com?subject=BUG%20REPORT%20%2F%20SUGGESTIONS"
+                            class="text-blue-500 hover:underline">Click here <svg
+                                class="w-6 h-6 inline-block text-blue-800" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M3 5.983C3 4.888 3.895 4 5 4h14c1.105 0 2 .888 2 1.983v8.923a1.992 1.992 0 0 1-2 1.983h-6.6l-2.867 2.7c-.955.899-2.533.228-2.533-1.08v-1.62H5c-1.105 0-2-.888-2-1.983V5.983Zm5.706 3.809a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Zm2.585.002a1 1 0 1 1 .003 1.414 1 1 0 0 1-.003-1.414Zm5.415-.002a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Z"
+                                    clip-rule="evenodd" />
+                            </svg> </a></span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 dark:bg-gray-600">
+            <span class="text-base text-gray-200 sm:text-center" style="font-family: 'JetBrains Mono';">
+                Made With<svg class="mx-1 inline-block" style="height: 18px; width: 18px;" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+                            fill="#e24040"></path>
+                    </g>
+                </svg>By ISK
+            </span><br>
+            <span class="text-base text-gray-400 sm:text-center" style="font-family: 'JetBrains Mono';">Initial Release:
+                15 APR 2024</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script>
+        const dropzone = document.getElementById("dropzone");
+        const fileInput = document.getElementById("dropzone-file");
+
+        // Drag-and-drop event listeners
+        dropzone.addEventListener("dragover", (event) => {
+            event.preventDefault();
+            dropzone.classList.add("border-blue-500");
+        });
+
+        dropzone.addEventListener("dragleave", () => {
+            dropzone.classList.remove("border-blue-500");
+        });
+
+        dropzone.addEventListener("drop", (event) => {
+            event.preventDefault();
+            dropzone.classList.remove("border-blue-500");
+
+            const files = event.dataTransfer.files;
+            if (files.length) {
+                handleFileInput(files); // Validate and process files
+            }
+        });
+
+        // Handle file input validation and UI update
+        function handleFileInput(files) {
+            const file = files[0];
+            if (file && file.type === "application/pdf") {
+                updateFileIcon(file); // Valid PDF file
+            } else {
+                alert("Only PDF files are allowed. Please upload a valid PDF.");
+            }
+        }
+
+        // Update file icon and name
+        function updateFileIcon(file) {
+            const fileContainer = document.getElementById("file-container");
+            const fileIcon = document.getElementById("file-icon");
+            const fileNameDisplay = document.getElementById("file-name-display");
+
+            // Hide file container and show file icon
+            fileContainer.style.display = "none";
+            fileIcon.style.display = "flex"; // Change display to flex
+
+            // Update file name
+            fileNameDisplay.textContent = file.name;
+        }
+
+        ////File traversal logic////
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const step1 = document.getElementById("step1");
+            const step2 = document.getElementById("step2");
+            const step3 = document.getElementById("step3");
+
+            const step1Submit = document.getElementById("step1Submit");
+            const step2Submit = document.getElementById("step2Submit");
+            const backToStep1 = document.getElementById("backToStep1");
+            const backToStep2 = document.getElementById("backToStep2");
+
+            // Step 1 -> Step 2 Validation
+            step1Submit.addEventListener("click", () => {
+                const name = document.getElementById("name").value;
+                const branch = document.getElementById("branch").value;
+                const SEM = document.getElementById("SEM").value;
+
+                if (name === "" || name === "xyz" || name === "abc") {
+                    alert("Please Enter Your Name");
+                    return; // Prevent moving to next step
+                }
+
+                if (branch === "Select Which Branch Of Pyqs Uploading" || SEM === "Select Which SEM PYQS Uploading") {
+                    alert("Please select branch & SEM");
+                    return; // Prevent moving to next step
+                }
+
+                disableInputs(step1);
+                step2.classList.remove("hidden");
+                scrollToElement(step2);
+            });
+
+            // Step 2 -> Step 3 Validation
+            step2Submit.addEventListener("click", () => {
+                const checkboxes = [
+                    document.getElementById("ESE"),
+                    document.getElementById("ISE1"),
+                    document.getElementById("ISE2"),
+                    document.getElementById("COMBINED")
+                ];
+
+                const checkedCount = checkboxes.filter(checkbox => checkbox.checked).length;
+
+                if (checkedCount === 0) {
+                    alert("Please select at least one paper type.");
+                    return; // Prevent moving to next step
+                }
+
+                disableInputs(step2);
+                step3.classList.remove("hidden");
+                scrollToElement(step3);
+            });
+
+            // Step 3 -> Step 2 (Back)
+            backToStep2.addEventListener("click", () => {
+                step3.classList.add("hidden");
+                enableInputs(step2);
+                scrollToElement(step2);
+            });
+
+            // Step 2 -> Step 1 (Back)
+            backToStep1.addEventListener("click", () => {
+                step2.classList.add("hidden");
+                enableInputs(step1);
+                scrollToElement(step1);
+            });
+
+            // Limit checkbox selection to 3
+            const checkboxes = document.querySelectorAll("#step2 input[type='checkbox']");
+            checkboxes.forEach((checkbox) => {
+                checkbox.addEventListener("change", () => {
+                    const selected = Array.from(checkboxes).filter(cb => cb.checked);
+                    if (selected.length > 3) {
+                        checkbox.checked = false;
+                        alert("You can select a maximum of 3 options.");
+                    }
+                });
+            });
+
+            // Disable inputs
+            function disableInputs(section) {
+                const inputs = section.querySelectorAll("input, select");
+                inputs.forEach(input => input.disabled = true);
+            }
+
+            // Enable inputs
+            function enableInputs(section) {
+                const inputs = section.querySelectorAll("input, select");
+                inputs.forEach(input => input.disabled = false);
+            }
+
+            // Scroll to element
+            function scrollToElement(element) {
+                element.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        });
+    </script>
+</body>
+
+</html>
