@@ -86,14 +86,14 @@
                             <div class="grid gap-4 mb-4 sm:grid-cols-2">
                                 <div class="mb-4">
                                     <label for="Name"
-                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Your
+                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">First
                                         Name</label>
                                     <input type="text" name="Name" id="name"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         placeholder="" required>
                                 </div>
                                 <div class="mb-4">
-                                    <label for="Branch"
+                                    <label for="branch"
                                         class="block mb-2 text-base font-medium text-gray-900 dark:text-white">PYQS
                                         Branch</label>
                                     <select id="branch" name="Branch" required
@@ -115,14 +115,12 @@
                             </div>
                             <div class="mb-5 flex justify-center">
                                 <div class="w-full max-w-sm">
-                                    <label for="SEM"
-                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">PYQS
-                                        SEM</label>
-                                    <select id="SEM" name="Sem"
-                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                        <option disabled selected>Select Which SEM PYQS Uploading</option>
-                                        <option value="SEM 3">SEM 3 (ODD)</option>
-                                        <option value="SEM 4">SEM 4 (EVEN)</option>
+                                    <label for="year"
+                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Year Of
+                                        Upload</label>
+                                    <select id="year" name="Year"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sdefaultm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option value="2024" selected>2024</option>
                                     </select>
                                 </div>
                             </div>
@@ -209,11 +207,18 @@
 
                             <div class="grid gap-4 mb-4 sm:grid-cols-2">
                                 <div class="mb-4">
-                                    <label for="Branch"
-                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Year</label>
-                                    <select id="countries" name="Branch"
-                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sdefaultm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                        <option value="II" selected>II</option>
+                                    <label for="SEM"
+                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">PYQS
+                                        SEM</label>
+                                    <select id="SEM" name="Sem"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                        <option disabled selected>Select Which SEM PYQS Uploading</option>
+                                        <option value="SEM 3">SEM 3 (ODD)</option>
+                                        <option value="SEM 4">SEM 4 (EVEN)</option>
+                                        <option value="SEM 5">SEM 5 (ODD)</option>
+                                        <option value="SEM 6">SEM 6 (EVEN)</option>
+                                        <option value="SEM 7">SEM 7 (ODD)</option>
+                                        <option value="SEM 8">SEM 8 (EVEN)</option>
                                     </select>
                                 </div>
 
@@ -225,18 +230,18 @@
                                         <li
                                             class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                                             <div class="flex items-center ps-3">
-                                                <input id="ESE" type="checkbox" value=""
+                                                <input id="ESE" type="checkbox" value="ESE"
                                                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="vue-checkbox-list"
+                                                <label for="ESE"
                                                     class="w-full py-3 ms-2 text-base font-medium text-gray-900 dark:text-gray-300">ESE</label>
                                             </div>
                                         </li>
                                         <li
                                             class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                                             <div class="flex items-center ps-3">
-                                                <input id="ISE1" type="checkbox" value=""
+                                                <input id="ISE1" type="checkbox" value="ISE1"
                                                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="react-checkbox-list"
+                                                <label for="ISE1"
                                                     class="w-full py-3 ms-2 text-base font-medium text-gray-900 dark:text-gray-300">ISE
                                                     1</label>
                                             </div>
@@ -244,19 +249,50 @@
                                         <li
                                             class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                                             <div class="flex items-center ps-3">
-                                                <input id="ISE2" type="checkbox" value=""
+                                                <input id="ISE2" type="checkbox" value="ISE2"
                                                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="angular-checkbox-list"
+                                                <label for="ISE2"
                                                     class="w-full py-3 ms-2 text-base font-medium text-gray-900 dark:text-gray-300">ISE
                                                     2</label>
                                             </div>
                                         </li>
                                         <li class="w-full dark:border-gray-600">
                                             <div class="flex items-center ps-3">
-                                                <input id="COMBINED" type="checkbox" value=""
+                                                <input id="COMBINED" type="checkbox" value="COMBINED"
                                                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="laravel-checkbox-list"
+                                                <label for="COMBINED"
                                                     class="w-full py-3 ms-2 text-base font-medium text-gray-900 dark:text-gray-300">Combined</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mb-5 flex justify-center">
+                                <div class="w-full max-w-sm">
+                                    <label for="SEM"
+                                        class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Select
+                                        Category</label>
+                                    <ul
+                                        class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="newUpload" type="radio" value="newFileUpload"
+                                                    name="list-radio"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="newUpload"
+                                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">New
+                                                    Upload</label>
+                                            </div>
+                                        </li>
+                                        <li class="w-full dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="updateExisting" type="radio" value="updateExistingFile"
+                                                    name="list-radio"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="updateExisting"
+                                                    class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Update
+                                                    Existing</label>
                                             </div>
                                         </li>
                                     </ul>
@@ -489,153 +525,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
-    <script>
-        const dropzone = document.getElementById("dropzone");
-        const fileInput = document.getElementById("dropzone-file");
-
-        // Drag-and-drop event listeners
-        dropzone.addEventListener("dragover", (event) => {
-            event.preventDefault();
-            dropzone.classList.add("border-blue-500");
-        });
-
-        dropzone.addEventListener("dragleave", () => {
-            dropzone.classList.remove("border-blue-500");
-        });
-
-        dropzone.addEventListener("drop", (event) => {
-            event.preventDefault();
-            dropzone.classList.remove("border-blue-500");
-
-            const files = event.dataTransfer.files;
-            if (files.length) {
-                handleFileInput(files); // Validate and process files
-            }
-        });
-
-        // Handle file input validation and UI update
-        function handleFileInput(files) {
-            const file = files[0];
-            if (file && file.type === "application/pdf") {
-                updateFileIcon(file); // Valid PDF file
-            } else {
-                alert("Only PDF files are allowed. Please upload a valid PDF.");
-            }
-        }
-
-        // Update file icon and name
-        function updateFileIcon(file) {
-            const fileContainer = document.getElementById("file-container");
-            const fileIcon = document.getElementById("file-icon");
-            const fileNameDisplay = document.getElementById("file-name-display");
-
-            // Hide file container and show file icon
-            fileContainer.style.display = "none";
-            fileIcon.style.display = "flex"; // Change display to flex
-
-            // Update file name
-            fileNameDisplay.textContent = file.name;
-        }
-
-        ////File traversal logic////
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const step1 = document.getElementById("step1");
-            const step2 = document.getElementById("step2");
-            const step3 = document.getElementById("step3");
-
-            const step1Submit = document.getElementById("step1Submit");
-            const step2Submit = document.getElementById("step2Submit");
-            const backToStep1 = document.getElementById("backToStep1");
-            const backToStep2 = document.getElementById("backToStep2");
-
-            // Step 1 -> Step 2 Validation
-            step1Submit.addEventListener("click", () => {
-                const name = document.getElementById("name").value;
-                const branch = document.getElementById("branch").value;
-                const SEM = document.getElementById("SEM").value;
-
-                if (name === "" || name === "xyz" || name === "abc") {
-                    alert("Please Enter Your Name");
-                    return; // Prevent moving to next step
-                }
-
-                if (branch === "Select Which Branch Of Pyqs Uploading" || SEM === "Select Which SEM PYQS Uploading") {
-                    alert("Please select branch & SEM");
-                    return; // Prevent moving to next step
-                }
-
-                disableInputs(step1);
-                step2.classList.remove("hidden");
-                scrollToElement(step2);
-            });
-
-            // Step 2 -> Step 3 Validation
-            step2Submit.addEventListener("click", () => {
-                const checkboxes = [
-                    document.getElementById("ESE"),
-                    document.getElementById("ISE1"),
-                    document.getElementById("ISE2"),
-                    document.getElementById("COMBINED")
-                ];
-
-                const checkedCount = checkboxes.filter(checkbox => checkbox.checked).length;
-
-                if (checkedCount === 0) {
-                    alert("Please select at least one paper type.");
-                    return; // Prevent moving to next step
-                }
-
-                disableInputs(step2);
-                step3.classList.remove("hidden");
-                scrollToElement(step3);
-            });
-
-            // Step 3 -> Step 2 (Back)
-            backToStep2.addEventListener("click", () => {
-                step3.classList.add("hidden");
-                enableInputs(step2);
-                scrollToElement(step2);
-            });
-
-            // Step 2 -> Step 1 (Back)
-            backToStep1.addEventListener("click", () => {
-                step2.classList.add("hidden");
-                enableInputs(step1);
-                scrollToElement(step1);
-            });
-
-            // Limit checkbox selection to 3
-            const checkboxes = document.querySelectorAll("#step2 input[type='checkbox']");
-            checkboxes.forEach((checkbox) => {
-                checkbox.addEventListener("change", () => {
-                    const selected = Array.from(checkboxes).filter(cb => cb.checked);
-                    if (selected.length > 3) {
-                        checkbox.checked = false;
-                        alert("You can select a maximum of 3 options.");
-                    }
-                });
-            });
-
-            // Disable inputs
-            function disableInputs(section) {
-                const inputs = section.querySelectorAll("input, select");
-                inputs.forEach(input => input.disabled = true);
-            }
-
-            // Enable inputs
-            function enableInputs(section) {
-                const inputs = section.querySelectorAll("input, select");
-                inputs.forEach(input => input.disabled = false);
-            }
-
-            // Scroll to element
-            function scrollToElement(element) {
-                element.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
